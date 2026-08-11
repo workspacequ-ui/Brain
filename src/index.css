@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@keyframes slideDown {
+  0% {
+    opacity: 0.2;
+    transform: translateY(-28px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes flowDownContinuous {
+  0% {
+    transform: translateY(-33.33333%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.animate-slide-down {
+  animation: slideDown 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-vertical-flow {
+  animation: flowDownContinuous 22s linear infinite;
+}
+
+.animate-vertical-flow:hover {
+  animation-play-state: paused !important;
+}
+
+/* ========================================================================== */
+/* PRINT STYLES FOR LABSCHOOL REPORTS                                         */
+/* ========================================================================== */
+@media print {
+  /* Reset background and colors for pure clean printing */
+  html, body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    font-size: 11pt !important;
+    line-height: 1.35 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide screen-only components when printing */
+  aside,
+  nav,
+  header,
+  footer,
+  .no-print,
+  button,
+  .sidebar,
+  .toast-notification,
+  .modal-backdrop-blur {
+    display: none !important;
+  }
+
+  /* Only display the printable document root */
+  #labschool-printable-document {
+    display: block !important;
+    visibility: visible !important;
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 10mm 12mm !important;
+    background: #ffffff !important;
+    color: #0f172a !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  .print-page-break {
+    page-break-before: always;
+  }
+
+  .print-avoid-break {
+    page-break-inside: avoid;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 8mm 10mm;
+  }
+}
+
+
