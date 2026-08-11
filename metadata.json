@@ -1,0 +1,6 @@
+{
+  "name": "Brain Space Academy - LMS & CBT",
+  "description": "Platform LMS & CBT Brain Space Academy dengan modul UTBK-SNBT 2026 (Pilihan Kampus & Direktori Program Studi PTN Terbaik dengan Admin CRUD, Tabel Passing Grade IRT, Kuota Daya Tampung SNPMB, Integrasi Peminat Siswa XII-UTBK, Live Countdown Timer, Database Siswa XII-UTBK, Roadmap 7 Subtes & Nilai IRT, Laporan & Analisis SNBT dengan Rapor Siswa, Analisis Tryout, Analisis Belajar & Jurnal Mengajar Terintegrasi 28 Modul Silabus, Kop Surat Resmi, Pratinjau & Cetak Jurnal A4, serta Ekspor CSV), modul persiapan Labschool, Silabus Kurikulum, PDF Split-View Engine, Manajemen User, dan Integrasi Database PostgreSQL.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
